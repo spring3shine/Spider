@@ -1,0 +1,102 @@
+{
+  "data": {
+    "quote": {
+      "symbol": "SH600996",
+      "high52w": 7.24,
+      "delayed": 0,
+      "type": 11,
+      "tick_size": 0.01,
+      "float_shares": 1051702656,
+      "limit_down": 4.01,
+      "high": 4.57,
+      "float_market_capital": 4753696005,
+      "lot_size": 100,
+      "chg": "0.07",
+      "eps": -0.37,
+      "last_close": 4.45,
+      "profit_four": -384075169.62,
+      "volume": 3508500,
+      "volume_ratio": 1.28,
+      "profit_forecast": -723493594,
+      "turnover_rate": 0.33,
+      "low52w": 4.33,
+      "name": "贵广网络",
+      "exchange": "SH",
+      "pe_forecast": -6.57,
+      "total_shares": 1051702656,
+      "status": 1,
+      "code": "600996",
+      "goodwill_in_net_assets": 0.03144789050283355,
+      "avg_price": 4.494,
+      "percent": 1.57,
+      "amplitude": 3.82,
+      "current": "4.52",
+      "current_year_percent": -17.22,
+      "issue_date": 1482681600000,
+      "sub_type": "ASH",
+      "low": 4.4,
+      "market_capital": 4753696005,
+      "dividend": 0,
+      "dividend_yield": 0,
+      "currency": "CNY",
+      "navps": 3.85,
+      "profit": -55420889.49,
+      "timestamp": 1634886000000,
+      "pe_lyr": -85.774,
+      "amount": 15768751,
+      "pb": 1.174,
+      "limit_up": 4.9,
+      "pe_ttm": -12.377,
+      "time": 1634886000000,
+      "open": 4.45,
+      "pankou_ratio": 44.53,
+      "cyb_switch": true,
+      "hasexist": false,
+      "quoteMarket": {
+        "status_id": 8,
+        "region": "CN",
+        "status": "休市",
+        "time_zone": "Asia/Shanghai",
+        "delay_tag": 0,
+        "statusStr": "休市"
+      },
+      "quoteRelation": [
+        {
+          "symbol": "SH110052",
+          "current": "103.45",
+          "chg": -0.09,
+          "name": "贵广转债",
+          "type": 5,
+          "percent": -0.09,
+          "tick_size": 0.01
+        }
+      ],
+      "followerText": "8676 球友关注",
+      "changeStr": "+0.07",
+      "percentStr": "+1.57%",
+      "stockColor": "stock-rise",
+      "parsedTime": "10-22 15:00:00（北京时间）",
+      "moneySymbol": "¥",
+      "afterHoursTime": "-",
+      "hasPankou": true,
+      "flagStr": "",
+      "tableHtml": "\u003ctable class\u003d\"quote-info\"\u003e\u003ctr\u003e\u003ctd\u003e最高：\u003cspan class\u003d\"stock-rise\"\u003e4.57\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e今开：\u003cspan\u003e4.45\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e涨停：\u003cspan class\u003d\"stock-rise\"\u003e4.90\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e成交量：\u003cspan\u003e35085手\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr class\u003d\"separateTop\"\u003e\u003ctd\u003e最低：\u003cspan class\u003d\"stock-fall\"\u003e4.40\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e昨收：\u003cspan\u003e4.45\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e跌停：\u003cspan class\u003d\"stock-fall\"\u003e4.01\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e成交额：\u003cspan\u003e1576.88万\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr class\u003d\"separateBottom\"\u003e\u003ctd\u003e量比：\u003cspan class\u003d\"stock-rise\"\u003e1.28\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e换手：\u003cspan\u003e0.33%\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e市盈率(动)：\u003cspan\u003e亏损\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e市盈率(TTM)：\u003cspan\u003e亏损\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e委比：\u003cspan class\u003d\"stock-rise\"\u003e44.53%\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e振幅：\u003cspan\u003e3.82%\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e市盈率(静)：\u003cspan\u003e亏损\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e市净率：\u003cspan\u003e1.17\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e每股收益：\u003cspan\u003e-0.37\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e股息(TTM)：\u003cspan\u003e0.00\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e总股本：\u003cspan\u003e10.52亿\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e总市值：\u003cspan\u003e47.54亿\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e每股净资产：\u003cspan\u003e3.85\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e股息率(TTM)：\u003cspan\u003e0.00%\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e流通股：\u003cspan\u003e10.52亿\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e流通值：\u003cspan\u003e47.54亿\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e52周最高：\u003cspan\u003e7.24\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e52周最低：\u003cspan\u003e4.33\u003c/span\u003e\u003c/td\u003e\u003ctd\u003e货币单位：\u003cspan\u003eCNY\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e",
+      "isMF": false,
+      "isFundChart": false,
+      "isDanjuan": false,
+      "isNormalStock": true,
+      "isFund": false,
+      "isUSStock": false
+    },
+    "quoteTags": [
+      {
+        "description": "可融资",
+        "value": 6
+      },
+      {
+        "description": "可卖空",
+        "value": 7
+      }
+    ]
+  }
+}
