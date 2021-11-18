@@ -52,7 +52,7 @@ class QiubaiproDBPipeline:
         article = item['article']
         stats_vote = item['stats_vote']
         stats_comments = item['stats_comments']
-        self.cursor.execute("update spider.qiubai set author_name='{}',author_img = '{}', article='{}', stats_vote={},stats_comments={} where tag_id = '{}'}"
+        self.cursor.execute("update spider.qiubai set author_name='{}',author_img = '{}', article='{}', stats_vote={},stats_comments={} where tag_id = '{}'"
                             .format(author_name,author_img,article,stats_vote,stats_comments,tag_id))
 
     def __insert_db(self, item):
