@@ -6,7 +6,9 @@
 
 # useful for handling different item types with a single interface
 import pymysql
+import scrapy
 from itemadapter import ItemAdapter
+from scrapy.pipelines.images import ImagesPipeline
 
 
 class QiubaiproPipeline:
@@ -53,7 +55,7 @@ class QiubaiproDBPipeline:
         stats_vote = item['stats_vote']
         stats_comments = item['stats_comments']
         self.cursor.execute("update spider.qiubai set author_name='{}',author_img = '{}', article='{}', stats_vote={},stats_comments={} where tag_id = '{}'"
-                            .format(author_name,author_img,article,stats_vote,stats_comments,tag_id))
+                            .format(author_name, author_img, article, stats_vote, stats_comments, tag_id))
 
     def __insert_db(self, item):
         assert self.conn.open
@@ -65,8 +67,7 @@ class QiubaiproDBPipeline:
         stats_vote = item['stats_vote']
         stats_comments = item['stats_comments']
         self.cursor.execute("insert into spider.qiubai(author_name,author_img,article,stats_vote,stats_comments,tag_id) values ('{}','{}','{}',{},{},'{}')"
-                            .format(author_name,author_img,article,stats_vote,stats_comments,tag_id))
-
+                            .format(author_name, author_img, article, stats_vote, stats_comments, tag_id))
 
     def open_spider(self, spider):
         """
@@ -110,3 +111,18 @@ class QiubaiproDBPipeline:
         else:
             self.__insert_db(item)
         return item
+
+
+class QiubaiImgPipeline(ImagesPipeline):
+    # 请求图片数据
+    def get_media_requests(self, item, info):
+        url = 'https:' + item['img_src']
+        yield scrapy.Request(url)
+
+    # 指定图片存储的位置
+    def file_path(self, request, response=None, info=None, *, item=None):
+        img_name = request.url.split('/')[-1]
+        return img_name
+
+    def item_completed(self, results, item, info):
+        return item  # 返回给下一个被执行的管道类

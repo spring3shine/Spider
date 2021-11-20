@@ -15,3 +15,11 @@ class QiubaiproItem(scrapy.Item):
     stats_vote = scrapy.Field()
     stats_comments = scrapy.Field()
     pass
+
+
+class QiubaiImgItem(scrapy.Item):
+    # define the fields for your item here like:
+    tag_id = scrapy.Field()
+    article_content = scrapy.Field()
+    img_src = scrapy.Field()
+    pass

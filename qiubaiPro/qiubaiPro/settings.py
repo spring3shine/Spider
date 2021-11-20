@@ -19,7 +19,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
-LOG_LEVEL = 'ERROR'
+LOG_LEVEL = 'INFO'
 
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
@@ -66,9 +66,12 @@ LOG_LEVEL = 'ERROR'
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'qiubaiPro.pipelines.QiubaiproPipeline': 300,
-   'qiubaiPro.pipelines.QiubaiproDBPipeline': 200,
+   # 'qiubaiPro.pipelines.QiubaiproPipeline': 300,
+   # 'qiubaiPro.pipelines.QiubaiproDBPipeline': 200,
+   'qiubaiPro.pipelines.QiubaiImgPipeline': 300
 }
+
+IMAGES_STORE = './qiubaiPro/img_store'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
