@@ -44,7 +44,8 @@ def img_ocr(img_path):
 
 if __name__ == '__main__':
     # img_ocr("7364.png")
-    img_ocr2("2710386495.png")
-    img_ocr2("2710386495屏幕截图.png")
+    # img_ocr("2710386495.png")
+    img_ocr("auc3.png")
+    # img_ocr("2710386495屏幕截图.png")
     # img_ocr("知乎截图.png")
     # img_ocr("静夜思.png")
