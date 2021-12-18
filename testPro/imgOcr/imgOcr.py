@@ -1,5 +1,5 @@
 import pytesseract
-from PIL import Image
+from PIL import Image, ImageFilter
 
 pytesseract.pytesseract.tesseract_cmd = r'D:\myApps\Tesseract-OCR\tesseract.exe'
 
@@ -25,12 +25,13 @@ def img_ocr(img_path):
             else:
                 table.append(0)
         # 图片二值化
+        pic_gray = pic_gray.filter(ImageFilter.BoxBlur(1))
         photo = pic_gray.point(table, '1')
         photo.show()
 
         # 解析图片，lang='chi_sim'表示识别简体中文，默认为English
         # 如果是只识别数字，可再加上参数config='--psm 6 --oem 3 -c tessedit_char_whitelist=0123456789'
-        content = pytesseract.image_to_string(photo, lang='chi_sim', config='--psm 7 --oem 3 -c tessedit_char_whitelist=0123456789')
+        content = pytesseract.image_to_string(photo, lang='eng', config='--psm 7 --oem 3 -c tessedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyz')
         print(content)
         photo.save('二值化结果.png')
 
@@ -38,7 +39,8 @@ def img_ocr(img_path):
 
     # 解析图片，lang='chi_sim'表示识别简体中文，默认为English
     # 如果是只识别数字，可再加上参数config='--psm 6 --oem 3 -c tessedit_char_whitelist=0123456789'
-    content = pytesseract.image_to_string(photo, lang='chi_sim', config='--psm 0 --oem 3 -c tessedit_char_whitelist=0123456789')
+    content = pytesseract.image_to_string(photo, lang='chi_sim', config='--psm 0 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')
+    # content = pytesseract.image_to_string(photo)
     print(content)
 
 
@@ -46,6 +48,7 @@ if __name__ == '__main__':
     # img_ocr("7364.png")
     # img_ocr("2710386495.png")
     img_ocr("auc3.png")
+    # print(pytesseract.image_to_string(Image.open('7364.png'), lang='chi_sim', config='--psm 6 --oem 3 -c tessedit_char_whitelist=0123456789'))
     # img_ocr("2710386495屏幕截图.png")
     # img_ocr("知乎截图.png")
     # img_ocr("静夜思.png")
